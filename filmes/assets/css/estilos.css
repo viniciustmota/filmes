@@ -1,0 +1,82 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css);
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600;700;800;900&display=swap");
+
+:root {
+  --cor-principal: #17162e;
+  --cor-segundaria: #1d1c3b;
+  --cor-terciaria: #ffffff;
+  --cor-checkbox: #706ea8;
+  --cor-placeholder: #8a8a8a;
+  --cor-paragrafo: #acacac;
+  --fonte-principal: "Kumbh Sans";
+}
+
+body {
+  background: var(--cor-principal);
+  color: var(--cor-terciaria);
+  font-weight: 500;
+  font-size: 18px;
+  font-family: var(--fonte-principal);
+}
+
+.header {
+}
+.header__titulo {
+  font-size: 36px;
+  font-weight: 600;
+}
+.header__pesquisar {
+  border-radius: 8px;
+  background-color: var(--cor-terciaria);
+  opacity: .2;
+  padding: 26px;
+}
+
+.header__pesquisar::placeholder {
+  color: var(--cor-placeholder);
+}
+
+#filmes-favoritos {
+  font-weight: 600;
+}
+
+.corpo {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.filme {
+  background-color: var(--cor-segundaria);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0.33352px 0.24932px 2.42246px 0px rgba(0, 0, 0, 0.03),
+    1.4367px 1.07399px 4.56719px 0px rgba(0, 0, 0, 0.05),
+    3.46346px 2.58907px 7.6377px 0px rgba(0, 0, 0, 0.06),
+    6.56775px 4.90965px 12.8375px 0px rgba(0, 0, 0, 0.08),
+    10.90349px 8.15079px 21.37012px 0px rgba(0, 0, 0, 0.09),
+    16.62462px 12.42755px 34.43906px 0px rgba(0, 0, 0, 0.1),
+    23.88506px 17.85501px 53.24785px 0px rgba(0, 0, 0, 0.12),
+    32.83875px 24.54825px 79px 0px rgba(0, 0, 0, 0.15);
+}
+.filme__imagem {
+}
+.filme__detalhes {
+}
+.filme__interacoes p {
+  font-weight: 400;
+}
+.filme__avaliacao {
+}
+.filme__icone {
+}
+.filme__avaliacao-nota {
+}
+.filme__favoritar {
+}
+.filme__descricao {
+  color: var(--cor-paragrafo);
+  line-height: 177.023%; /* 31.864px */
+}
